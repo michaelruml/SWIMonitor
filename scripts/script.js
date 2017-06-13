@@ -37,9 +37,8 @@ function updatePanel(panelId, panelCaption, xhttp) {
             statusMessage = "ERR";
     }
 
-    let boxCaption = "<h1>" + panelCaption + " " + statusMessage + "</h1><br/>" + "Status: " + xhttp.status + "<br/>" + serverId + "<br/><br/>" + dateTime;
+    let boxCaption = "<header><h1>" + panelCaption + "</h1></header><div class='badge'><span class='font-heavy'>"+ statusMessage +"</span></div><div class='content'><p>" + "Status: " + xhttp.status + "</p><p>" + serverId + "</p><p>" + dateTime + "</p></div>";
     panel.innerHTML = boxCaption;
-
 
 }
 
