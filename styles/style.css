@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+.container-fluid {
+    width: 100%;
+    max-width: 100%;
+}
+
+div.ok {
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+
+div.DR {
+    background-color: rgb(255, 153, 0);
+    border: 1px rgb(255, 153, 0)
+}
+
+div.err {
+    background-color: red;
+    border: 1px solid red;
+}
