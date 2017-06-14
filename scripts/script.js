@@ -19,21 +19,21 @@ function updatePanel(panelId, panelCaption, xhttp) {
     let serverId = (match != null && match.length >= 2) ? match[1] : "undefined";
     let isCdServer = serverId.indexOf("SOLARWINDSCD01") != -1 || serverId.indexOf("SOLARWINDSCD02") != -1;
     let isDRServer = serverId.indexOf("SOLARWINDSDR01") != -1 || serverId.indexOf("SOLARWINDSDR02") != -1;
-    let statusMessage = "N/A";
+    let statusMessage = "";
 
     switch (serverId) {
         case "SOLARWINDSCD01":
         case "SOLARWINDSCD02":
-            panel.className += " ok ";
+            panel.setAttribute('data-status','ok');
             statusMessage = "OK";
             break;
         case "SOLARWINDSDR01":
         case "SOLARWINDSDR02":
-            panel.className += " DR ";
+            panel.setAttribute('data-status','dr');
             statusMessage = "DR";
             break;
         default:
-            panel.className += " err ";
+            panel.setAttribute('data-status','err');
             statusMessage = "ERR";
     }
 
