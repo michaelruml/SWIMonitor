@@ -56,7 +56,7 @@ function loadPage(panelId, panelCaption, url) {
 
 function loadStatus() {
     loadPage("solarwinds", "solarwinds.com", "http://www.solarwinds.com/?mira-monitoring-website");
-    loadPage("dameware", "dameware.com", "http://www.dameware.com/?mira-monitoring-website");
+    loadPage("dameware", "dameware.com", "https://www.dameware.com/?mira-monitoring-website");
     loadPage("webhelpdesk", "webhelpdesk.com", "http://www.webhelpdesk.com/?mira-monitoring-website");
     loadPage("kiwisyslog", "kiwisyslog.com", "http://www.kiwisyslog.com/?mira-monitoring-website");
 }
