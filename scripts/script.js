@@ -59,7 +59,7 @@ function loadStatus() {
     loadPage("dameware", "dameware.com", "https://www.dameware.com/?mira-monitoring-website");
     loadPage("webhelpdesk", "webhelpdesk.com", "https://www.webhelpdesk.com/?mira-monitoring-website");
     loadPage("kiwisyslog", "kiwisyslog.com", "https://www.kiwisyslog.com/?mira-monitoring-website");
-    loadPage("serv-u", "serv-u.com", "http://www.serv-u.com/?mira-monitoring-website");
+    loadPage("serv-u", "serv-u.com", "https://www.serv-u.com/?mira-monitoring-website");
 }
 
 
