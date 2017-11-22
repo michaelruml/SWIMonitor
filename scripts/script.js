@@ -60,6 +60,7 @@ function loadStatus() {
     loadPage("webhelpdesk", "webhelpdesk.com", "https://www.webhelpdesk.com/?mira-monitoring-website");
     loadPage("kiwisyslog", "kiwisyslog.com", "https://www.kiwisyslog.com/?mira-monitoring-website");
     loadPage("serv-u", "serv-u.com", "https://www.serv-u.com/?mira-monitoring-website");
+    loadPage("appoptics", "appoptics.com", "https://www.appoptics.com/?mira-monitoring website");
 }
 
 
