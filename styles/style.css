@@ -103,22 +103,22 @@ body {
 }
 
 .card[data-status="rs-cd"]>header {
-    background: rgb(38, 0, 255);
-    background: -moz-linear-gradient(-45deg, rgba(38, 0, 255, 1) 0%, rgba(59, 214, 7, 1) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(38, 0, 255, 1) 0%, rgba(59, 214, 7, 1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(38, 0, 255, 1) 0%, rgba(59, 214, 7, 1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(38, 0, 255, 1) 0%, rgba(59, 214, 7, 1) 100%);
-    background: linear-gradient(135deg, rgba(38, 0, 255, 1) 0%, rgba(59, 214, 7, 1) 100%);
+    background: rgb(2, 141, 255);
+    background: -moz-linear-gradient(-45deg, rgba(2, 141, 255, 1) 0%, rgb(2, 130, 235, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(2, 141, 255, 1) 0%, rgba(2, 130, 235, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(2, 141, 255, 1) 0%, rgba(2, 130, 235, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(2, 141, 255, 1) 0%, rgba(2, 130, 235, 1) 100%);
+    background: linear-gradient(135deg, rgba(2, 141, 255, 1) 0%, rgba(2, 130, 235, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=1);
 }
 
 .card[data-status="rs-dr"]>header {
-    background: rgba(38, 0, 255);
-    background: -moz-linear-gradient(-45deg, rgba(38, 0, 255, 1) 0%, rgba(255, 146, 10, 1) 100%);
-    background: -webkit-linear-gradient(-45deg, rgba(38, 0, 255, 1) 0%, rgba(255, 146, 10, 1) 100%);
-    background: -o-linear-gradient(-45deg, rgba(38, 0, 255, 1) 0%, rgba(255, 146, 10, 1) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(38, 0, 255, 1) 0%, rgba(255, 146, 10, 1) 100%);
-    background: linear-gradient(135deg, rgba(38, 0, 255, 1) 0%, rgba(255, 146, 10, 1) 100%);
+    background: rgba(255, 146, 10, 1);
+    background: -moz-linear-gradient(-45deg, rgba(255, 175, 75, 1) 0%, rgba(255, 146, 10, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(255, 175, 75, 1) 0%, rgba(255, 146, 10, 1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255, 175, 75, 1) 0%, rgba(255, 146, 10, 1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(255, 175, 75, 1) 0%, rgba(255, 146, 10, 1) 100%);
+    background: linear-gradient(135deg, rgba(255, 175, 75, 1) 0%, rgba(255, 146, 10, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a', GradientType=1);
 }
 
