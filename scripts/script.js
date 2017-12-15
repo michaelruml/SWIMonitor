@@ -13,12 +13,18 @@ function updatePanel(panelId, panelCaption, xhttp) {
     let currentDate = new Date();
     let dateTime = currentDate.today() + " " + currentDate.timeNow();
     let text = xhttp.responseText;
-    let regex = /\"server\"\s*:\s*\"([a-zA-Z0-9]*)\",/g;
+    let regex = /\"server\"\s*:\s*\"([a-zA-Z0-9-]*)\",/g;
     let match = regex.exec(text);
 
     let serverId = (match != null && match.length >= 2) ? match[1] : "undefined";
-    let isCdServer = serverId.indexOf("SOLARWINDSCD01") != -1 || serverId.indexOf("SOLARWINDSCD02") != -1;
-    let isDRServer = serverId.indexOf("SOLARWINDSDR01") != -1 || serverId.indexOf("SOLARWINDSDR02") != -1;
+    let isCdServer = serverId.indexOf("SOLARWINDSCD01") != -1 || 
+        serverId.indexOf("SOLARWINDSCD02") != -1 || 
+        serverId.indexOf("p-win-cd-02") != -1 ||
+        serverId.indexOf("p-win-cd-01") != -1;
+    let isDRServer = serverId.indexOf("SOLARWINDSDR01") != -1 || 
+    serverId.indexOf("SOLARWINDSDR02") != -1 ||
+    serverId.indexOf("p-win-dr-02") != -1 ||
+    serverId.indexOf("p-win-dr-02") != -1 ;
     let statusMessage = "";
 
     switch (serverId) {
@@ -30,6 +36,16 @@ function updatePanel(panelId, panelCaption, xhttp) {
         case "SOLARWINDSDR01":
         case "SOLARWINDSDR02":
             panel.setAttribute('data-status','dr');
+            statusMessage = "DR";
+            break;
+        case "p-win-cd-02":
+        case "p-win-cd-01":
+            panel.setAttribute('data-status','rs-cd');
+            statusMessage = "OK";
+            break;
+        case "p-win-dr-02":
+        case "p-win-dr-01":
+            panel.setAttribute('data-status','rs-dr');
             statusMessage = "DR";
             break;
         default:
