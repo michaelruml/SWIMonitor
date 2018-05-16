@@ -63,6 +63,7 @@ function loadStatus() {
     loadPage("kiwisyslog", "kiwisyslog.com", "https://www.kiwisyslog.com/?mira-monitoring-website");
     loadPage("serv-u", "serv-u.com", "https://www.serv-u.com/?mira-monitoring-website");
     loadPage("appoptics", "appoptics.com", "https://www.appoptics.com/?mira-monitoring website");
+    loadPage("trysolarwinds", "try.solarwinds.com", "https://try.solarwinds.com/?mira-monitoring website");
 }
 
 
